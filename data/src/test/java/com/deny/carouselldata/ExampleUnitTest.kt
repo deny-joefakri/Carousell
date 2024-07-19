@@ -1,4 +1,4 @@
-package com.deny.domain
+package com.deny.carouselldata
 
 import org.junit.Test
 

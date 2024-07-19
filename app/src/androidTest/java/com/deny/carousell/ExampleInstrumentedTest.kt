@@ -1,4 +1,4 @@
-package com.deny.carousellsample
+package com.deny.carousell
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

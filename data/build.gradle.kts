@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.deny.carousellsample"
+    namespace = "com.deny.carouselldata"
     compileSdk = Versions.ANDROID_COMPILE_SDK_VERSION
 
     defaultConfig {

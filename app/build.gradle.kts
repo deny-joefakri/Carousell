@@ -29,7 +29,7 @@ android {
 //        }
 //    }
 
-    namespace = "com.deny.carousellsample"
+    namespace = "com.deny.carousell"
     compileSdk = Versions.ANDROID_COMPILE_SDK_VERSION
 
     defaultConfig {
@@ -59,14 +59,14 @@ android {
 //            buildConfigField("String", "BASE_API_URL", "\"https://jsonplaceholder.typicode.com/\"")
         }
     }
-    flavorDimensions += Flavor.DIMENSION_VERSION
-    productFlavors {
-        create(Flavor.STAGING) {
-            applicationIdSuffix = ".staging"
-        }
-
-        create(Flavor.PRODUCTION) {}
-    }
+//    flavorDimensions += Flavor.DIMENSION_VERSION
+//    productFlavors {
+//        create(Flavor.STAGING) {
+//            applicationIdSuffix = ".staging"
+//        }
+//
+//        create(Flavor.PRODUCTION) {}
+//    }
 
     sourceSets["test"].resources {
         srcDir("src/test/resources")
