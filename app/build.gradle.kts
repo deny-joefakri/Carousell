@@ -38,7 +38,7 @@ android {
 
     defaultConfig {
         applicationId = "com.deny.carousellsample"
-        minSdk = Versions.ANDROID_COMPILE_SDK_VERSION
+        minSdk = Versions.ANDROID_MIN_SDK_VERSION
         targetSdk = Versions.ANDROID_TARGET_SDK_VERSION
         versionCode = Versions.ANDROID_VERSION_CODE
         versionName = Versions.ANDROID_VERSION_NAME
