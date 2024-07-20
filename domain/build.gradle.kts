@@ -1,5 +1,6 @@
 plugins {
     id(libs.plugins.java.library.get().pluginId)
+    id("kotlin")
     alias(libs.plugins.kotlinx.kover)
 }
 

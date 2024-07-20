@@ -45,8 +45,6 @@ dependencies {
     implementation(project(Modules.DOMAIN))
 
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.datastore.preferences)
-    implementation(libs.androidx.security.crypto)
     implementation(libs.hilt.android)
     implementation(libs.moshi)
     implementation(libs.kotlin.stdlib)
