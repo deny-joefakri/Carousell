@@ -135,17 +135,15 @@ dependencies {
     implementation(libs.androidx.ui.tooling)
     implementation(libs.androidx.foundation)
     implementation(libs.androidx.material)
+    implementation(libs.coil)
 
     implementation(libs.androidx.navigation.compose)
-    implementation(libs.accompanist.permissions)
     implementation(libs.accompanist.systemuicontroller)
 
     implementation(libs.androidx.hilt.navigation.compose)
 
     implementation(libs.timber)
-
-    implementation(libs.android.common.ktx)
-
+    
     implementation(libs.kotlin.stdlib)
     implementation(libs.kotlinx.coroutines.android)
 

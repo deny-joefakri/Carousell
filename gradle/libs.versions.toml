@@ -1,7 +1,6 @@
 [versions]
 accompanistPermissions = "0.30.1"
 agp = "8.4.0"
-androidCommonKtx = "0.1.1"
 composeBom = "2023.04.01"
 converterMoshi = "2.9.0"
 core = "1.4.0"
@@ -42,11 +41,10 @@ timber = "4.7.1"
 turbine = "0.13.0"
 materialVersion = "1.12.0"
 junitVersion = "1.2.1"
+coil = "1.3.0"
 
 [libraries]
-accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanistPermissions" }
 accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanistPermissions" }
-android-common-ktx = { module = "com.github.nimblehq:android-common-ktx", version.ref = "androidCommonKtx" }
 androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
 androidx-core = { module = "androidx.test:core", version.ref = "core" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -87,8 +85,7 @@ robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectr
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
 ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
-material = { group = "com.google.android.material", name = "material", version.ref = "materialVersion" }
-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+coil = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

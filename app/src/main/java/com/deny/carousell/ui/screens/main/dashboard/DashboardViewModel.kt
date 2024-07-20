@@ -24,17 +24,31 @@ class DashboardViewModel @Inject constructor(
     private val _uiModels = MutableStateFlow<List<UiNewsModel>>(emptyList())
     val uiModels = _uiModels.asStateFlow()
 
+    private val _sortedUiModels = MutableStateFlow<List<UiNewsModel>>(emptyList())
+    val sortedUiModels = _sortedUiModels.asStateFlow()
+
     init {
         getNewsUseCase()
             .injectLoading()
             .onEach { result ->
                 val uiModels = result.map { it.toUiNewsModel() }
                 _uiModels.emit(uiModels)
+                _sortedUiModels.emit(uiModels) // Initialize with the original list
             }
             .flowOn(dispatchersProvider.io)
             .catch { e -> _error.emit(e) }
             .launchIn(viewModelScope)
 
+    }
+
+    fun sortByRecent() {
+        val sortedList = _uiModels.value.sortedByDescending { it.timeCreated }
+        _sortedUiModels.value = sortedList
+    }
+
+    fun sortByPopular() {
+        val sortedList = _uiModels.value.sortedWith(compareBy({ -it.rank }, { -it.timeCreated }))
+        _sortedUiModels.value = sortedList
     }
 
 }
