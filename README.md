@@ -63,21 +63,10 @@ Build a Carousell News application that displays a list of articles with the fol
 
   Report is located at: `./build/reports/detekt`
 
-## Testing
+## Run the App: Deploy the app to an emulator or physical device.
 
-- Run unit testing:
+Submitting the Assignment
 
-  ```
-  $ ./gradlew test
-  ```
+After completing the assignment, archive the project and submit it via email with the subject line: [Your Name](Android Coding Challenge).
 
-  Report is located at: `./app/build/reports/tests/testDebugUnitTest`
-
-- Run unit testing with coverage:
-
-  ```
-  $ ./gradlew koverHtmlReport
-  ```
-
-  Report is located at: `app/build/reports/kover/`
-
+Thank you for reviewing this project. Your feedback is highly appreciated!
