@@ -17,7 +17,9 @@ import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
 import com.deny.carousell.R
 import com.deny.carousell.ui.models.UiNewsModel
+import com.deny.carousell.ui.theme.AppTheme.dimensions
 import com.deny.carousell.ui.theme.ComposeTheme
+import com.deny.carousell.ui.theme.LocalAppDimensions
 import com.deny.carousell.util.DateUtil.formatTime
 
 @OptIn(ExperimentalCoilApi::class)
@@ -26,11 +28,12 @@ fun Item(
     uiModel: UiNewsModel,
     modifier: Modifier = Modifier,
 ) {
+
     Card(
-        shape = RoundedCornerShape(8.dp),
-        elevation = 4.dp,
+        shape = RoundedCornerShape(dimensions.spacingXSmall),
+        elevation = dimensions.spacing2XSmall,
         modifier = Modifier
-            .padding(horizontal = 14.dp, vertical = 8.dp)
+            .padding(horizontal = dimensions.spacingSmall2X, vertical = dimensions.spacingXSmall)
             .fillMaxWidth()
     ) {
         Column(
@@ -47,7 +50,7 @@ fun Item(
             )
             Column(
                 modifier = Modifier
-                    .padding(16.dp)
+                    .padding(dimensions.spacingMedium)
             ) {
                 Text(
                     text = uiModel.title,
@@ -57,7 +60,7 @@ fun Item(
                     maxLines = 2,
                     overflow = TextOverflow.Ellipsis
                 )
-                Spacer(modifier = Modifier.height(8.dp))
+                Spacer(modifier = Modifier.height(dimensions.spacingXSmall))
                 Text(
                     text = uiModel.description,
                     style = MaterialTheme.typography.body2,
@@ -65,7 +68,7 @@ fun Item(
                     maxLines = 2,
                     overflow = TextOverflow.Ellipsis
                 )
-                Spacer(modifier = Modifier.height(8.dp))
+                Spacer(modifier = Modifier.height(dimensions.spacingXSmall))
                 Text(
                     text = formatTime(uiModel.timeCreated),
                     style = MaterialTheme.typography.caption,

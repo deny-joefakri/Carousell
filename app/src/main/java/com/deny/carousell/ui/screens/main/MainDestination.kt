@@ -12,20 +12,4 @@ sealed class MainDestination {
 
     object Home : BaseDestination("home")
 
-    object Second : BaseDestination("second/{$KeyId}") {
-
-        override val arguments = listOf(
-            navArgument(KeyId) { type = NavType.StringType }
-        )
-
-        fun createRoute(id: String) = apply {
-            destination = "second/$id"
-        }
-    }
-
-    object Third : BaseDestination("third") {
-        fun addParcel(value: UiNewsModel) = apply {
-            parcelableArgument = KeyModel to value
-        }
-    }
 }

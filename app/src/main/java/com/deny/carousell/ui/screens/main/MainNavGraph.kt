@@ -28,20 +28,5 @@ fun NavGraphBuilder.mainNavGraph(
             )
         }
 
-        composable(destination = MainDestination.Second) { backStackEntry ->
-            /*SecondScreen(
-                navigator = { destination -> navController.navigate(destination) },
-                id = backStackEntry.arguments?.getString(KeyId).orEmpty()
-            )*/
-        }
-
-        composable(destination = MainDestination.Third) {
-            /*ThirdScreen(
-                navigator = { destination -> navController.navigate(destination) },
-                model = navController.previousBackStackEntry?.savedStateHandle?.get<UiModel>(
-                    KeyModel
-                )
-            )*/
-        }
     }
 }

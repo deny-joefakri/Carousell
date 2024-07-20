@@ -8,6 +8,7 @@ class AppDimensions {
     val spacing2XSmall = 4.dp
     val spacingXSmall = 8.dp
     val spacingSmall = 12.dp
+    val spacingSmall2X = 14.dp
     val spacingMedium = 16.dp
     val spacingLarge = 20.dp
     val spacingXLarge = 24.dp
