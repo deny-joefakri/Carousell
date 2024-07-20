@@ -29,6 +29,10 @@ android {
 //        }
 //    }
 
+    buildFeatures {
+        buildConfig = true
+    }
+
     namespace = "com.deny.carousell"
     compileSdk = Versions.ANDROID_COMPILE_SDK_VERSION
 
@@ -49,14 +53,14 @@ android {
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
 //            signingConfig = signingConfigs[BuildType.RELEASE]
-//            buildConfigField("String", "BASE_API_URL", "\"https://storage.googleapis.com/carousell-interview-assets/android/\"")
+            buildConfigField("String", "BASE_API_URL", "\"https://storage.googleapis.com/carousell-interview-assets/android/\"")
         }
 
         getByName(BuildType.DEBUG) {
             // For quickly testing build with proguard, enable this
             isMinifyEnabled = false
 //            signingConfig = signingConfigs[BuildType.DEBUG]
-//            buildConfigField("String", "BASE_API_URL", "\"https://storage.googleapis.com/carousell-interview-assets/android/\"")
+            buildConfigField("String", "BASE_API_URL", "\"https://storage.googleapis.com/carousell-interview-assets/android/\"")
         }
     }
 //    flavorDimensions += Flavor.DIMENSION_VERSION
@@ -135,7 +139,7 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.accompanist.permissions)
     implementation(libs.accompanist.systemuicontroller)
-    
+
     implementation(libs.androidx.hilt.navigation.compose)
 
     implementation(libs.timber)
