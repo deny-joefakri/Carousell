@@ -69,6 +69,6 @@ Build a Carousell News application that displays a list of articles with the fol
 
 ## Acknowledgment
 
-This project was built using the Android template provided by Nimble. I want to express my gratitude to Nimble for making such an excellent template available. It has greatly streamlined my development process and ensured the project maintains a high standard of quality. You can find credit to Nimble’s template source in my public GitHub projects.
+This project was built using the Android template provided by [Nimble](https://github.com/nimblehq/android-templates). I want to express my gratitude to Nimble for making such an excellent template available. It has greatly streamlined my development process and ensured the project maintains a high standard of quality. You can find credit to Nimble’s template source in my public GitHub projects.
 
 ---
