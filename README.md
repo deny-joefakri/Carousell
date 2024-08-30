@@ -1,4 +1,4 @@
-Sure, I'll format the README to match the requested design and keep the existing content:
+---
 
 # Carousell News
 
@@ -63,10 +63,12 @@ Build a Carousell News application that displays a list of articles with the fol
 
   Report is located at: `./build/reports/detekt`
 
-## Run the App: Deploy the app to an emulator or physical device.
+## Run the App
 
-Submitting the Assignment
+- Deploy the app to an emulator or physical device.
 
-After completing the assignment, archive the project and submit it via email with the subject line: [Your Name](Android Coding Challenge).
+## Acknowledgment
 
-Thank you for reviewing this project. Your feedback is highly appreciated!
+This project was built using the Android template provided by Nimble. I want to express my gratitude to Nimble for making such an excellent template available. It has greatly streamlined my development process and ensured the project maintains a high standard of quality. You can find credit to Nimble’s template source in my public GitHub projects.
+
+---
